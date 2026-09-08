@@ -1,0 +1,4 @@
+plane,n,classification_accuracy,mean_no_tumor_probability,mean_tumor_probability,mean_false_tumor_area_ratio,median_false_tumor_area_ratio,max_false_tumor_area_ratio,empty_prediction_rate,false_tumor_detection_rate,mean_max_segmentation_probability
+axial,52,1.0,0.999994757083746,5.23673018576049e-06,0.0,0.0,0.0,1.0,0.0,0.0306445437555129
+coronal,48,1.0,0.9999964212377866,3.5777904419849924e-06,0.0,0.0,0.0,1.0,0.0,0.0174868451043342
+sagittal,40,1.0,0.9999965727329254,3.4238995795021764e-06,0.0,0.0,0.0,1.0,0.0,0.0283655169652774

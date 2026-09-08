@@ -1,0 +1,5 @@
+split,plane,count
+test,axial,398
+test,unknown,602
+train,axial,1595
+train,unknown,3405

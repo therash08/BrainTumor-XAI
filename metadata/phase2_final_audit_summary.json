@@ -1,0 +1,51 @@
+{
+    "raw_classification": {
+        "official_train": 5000,
+        "official_test": 1000,
+        "exact_duplicate_groups": 46,
+        "raw_train_test_overlap_groups": 7
+    },
+    "clean_development": {
+        "images": 4955,
+        "expected_original_study_size": 4955,
+        "matches_original_study_size": true,
+        "internal_exact_duplicates": 0,
+        "exact_test_overlap": 0
+    },
+    "official_test": {
+        "images": 1000,
+        "untouched": true
+    },
+    "segmentation": {
+        "expert_train_pairs": 3933,
+        "expert_test_pairs": 860,
+        "raw_train_test_exact_overlap_groups": 7,
+        "clean_development_vs_expert_test_overlap": 0
+    },
+    "near_duplicate_screening": {
+        "clean_development_test_threshold": 8,
+        "clean_development_test_candidates": 2189,
+        "internal_development_threshold": 6,
+        "internal_development_candidates": 2143
+    },
+    "patient_identifiers_available": false,
+    "mri_planes": {
+        "all_classification": {
+            "axial": 1993,
+            "coronal": 1981,
+            "sagittal": 2026,
+            "unknown": 0
+        },
+        "expert_test": {
+            "axial": 346,
+            "coronal": 257,
+            "sagittal": 257,
+            "total": 860
+        },
+        "plane_source": "BRISC2025 filename token",
+        "verification_source": "exact classification-record mapping",
+        "sha_plane_ambiguous_groups": 13,
+        "incorrect_sha_plane_assignments": 13,
+        "exact_vs_filename_disagreements": 0
+    }
+}

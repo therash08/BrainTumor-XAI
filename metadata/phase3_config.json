@@ -1,0 +1,16 @@
+{
+    "seed": 42,
+    "image_size": 256,
+    "clean_development": 4955,
+    "train": 4211,
+    "validation": 744,
+    "official_test": 1000,
+    "stratification": "class_name + plane",
+    "normalization": "ImageNet",
+    "classification_batch_size": 32,
+    "segmentation_batch_size": 8,
+    "multitask_batch_size": 8,
+    "num_workers": 0,
+    "pin_memory": true,
+    "device": "cuda"
+}

@@ -1,0 +1,10 @@
+figure,file,description
+Figure 1,D:\brain_tumor\phase16_final_outputs\figures\figure1_classification_performance.png,Official-test classification Accuracy and Macro-F1
+Figure 2,D:\brain_tumor\phase16_final_outputs\figures\figure2_segmentation_dice.png,Expert-test segmentation Dice
+Figure 3,D:\brain_tumor\phase16_final_outputs\figures\figure3_calibration_ece.png,15-bin Expected Calibration Error
+Figure 4A,D:\brain_tumor\phase16_final_outputs\figures\figure4_reliability_efficientnet_b0.png,EfficientNet-B0 reliability diagram
+Figure 4B,D:\brain_tumor\phase16_final_outputs\figures\figure4_reliability_convnext_tiny.png,ConvNeXt-Tiny reliability diagram
+Figure 4C,D:\brain_tumor\phase16_final_outputs\figures\figure4_reliability_trustseg_xai.png,TrustSeg-XAI reliability diagram
+Figure 5,D:\brain_tumor\phase16_final_outputs\figures\figure5_mask_dependency_probability_effect.png,Mask-guidance probability effects
+Figure 6,D:\brain_tumor\phase16_final_outputs\figures\figure6_gradcam_classwise_dice.png,Class-wise Grad-CAM++ Dice
+Figure 7,D:\brain_tumor\phase16_final_outputs\figures\figure7_causal_faithfulness_classwise.png,Class-wise causal faithfulness margin

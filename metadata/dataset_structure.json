@@ -1,0 +1,37 @@
+{
+    "classification": {
+        "num_classes": 4,
+        "classes": [
+            "glioma",
+            "meningioma",
+            "pituitary",
+            "no_tumor"
+        ],
+        "train_images": 5000,
+        "test_images": 1000,
+        "total_images": 6000,
+        "per_class": {
+            "train": {
+                "glioma": 1147,
+                "meningioma": 1329,
+                "no_tumor": 1067,
+                "pituitary": 1457
+            },
+            "test": {
+                "glioma": 254,
+                "meningioma": 306,
+                "no_tumor": 140,
+                "pituitary": 300
+            }
+        }
+    },
+    "segmentation": {
+        "train_images": 3933,
+        "train_masks": 3933,
+        "test_images": 860,
+        "test_masks": 860,
+        "total_image_mask_pairs": 4793,
+        "train_count_match": true,
+        "test_count_match": true
+    }
+}

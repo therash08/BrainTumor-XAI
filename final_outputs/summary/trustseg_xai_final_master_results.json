@@ -1,0 +1,533 @@
+{
+    "study": "TrustSeg-XAI",
+    "status": "all experiments permanently locked",
+    "classification": [
+        {
+            "model": "EfficientNet-B0",
+            "accuracy": 0.996,
+            "accuracy_95ci": "0.9960 [0.9920, 0.9990]",
+            "macro_f1": 0.9965443062,
+            "macro_f1_95ci": "0.9965 [0.9929, 0.9992]",
+            "mcc": 0.9945545412,
+            "auc": 0.9996296326,
+            "mean_confidence": 0.9976786,
+            "ece_15_bins": 0.003536,
+            "multiclass_brier": 0.0076493419
+        },
+        {
+            "model": "ConvNeXt-Tiny",
+            "accuracy": 0.986,
+            "accuracy_95ci": "0.9860 [0.9780, 0.9930]",
+            "macro_f1": 0.9872406066,
+            "macro_f1_95ci": "0.9872 [0.9800, 0.9935]",
+            "mcc": 0.9809273627,
+            "auc": 0.9990184284,
+            "mean_confidence": 0.9960552191,
+            "ece_15_bins": 0.0113823023,
+            "multiclass_brier": 0.0248531453
+        },
+        {
+            "model": "TrustSeg-XAI",
+            "accuracy": 0.99,
+            "accuracy_95ci": "0.9900 [0.9840, 0.9960]",
+            "macro_f1": 0.9905571582,
+            "macro_f1_95ci": "0.9906 [0.9844, 0.9961]",
+            "mcc": 0.9863555616,
+            "auc": 0.999219368,
+            "mean_confidence": 0.9993751,
+            "ece_15_bins": 0.0099901,
+            "multiclass_brier": 0.0194381392
+        }
+    ],
+    "segmentation": [
+        {
+            "model": "U-Net ResNet34",
+            "dice": 0.8321023887,
+            "dice_95ci": "",
+            "iou": 0.740505761,
+            "precision": 0.8402364337,
+            "recall": 0.8496924718,
+            "specificity": 0.9973730025,
+            "hd95": 8.4825583365,
+            "hd95_penalized": 9.7158936166
+        },
+        {
+            "model": "U-Net++ ResNet34",
+            "dice": 0.8353101076,
+            "dice_95ci": "",
+            "iou": 0.7436315564,
+            "precision": 0.8568757125,
+            "recall": 0.839939091,
+            "specificity": 0.9975596107,
+            "hd95": 9.3675264987,
+            "hd95_penalized": 10.1876919533
+        },
+        {
+            "model": "TrustSeg-XAI",
+            "dice": 0.8392228497,
+            "dice_95ci": "0.8392 [0.8280, 0.8495]",
+            "iou": 0.7477829247,
+            "precision": 0.8659625742,
+            "recall": 0.8409628202,
+            "specificity": 0.9978702377,
+            "hd95": 7.9071677781,
+            "hd95_penalized": 9.9660718723
+        }
+    ],
+    "mask_dependency": {
+        "conditions": [
+            {
+                "condition": "predicted",
+                "accuracy": 0.99,
+                "macro_f1": 0.9905571582,
+                "mcc": 0.9863555616,
+                "auc": 0.999219368,
+                "mean_true_class_probability": 0.9897399085
+            },
+            {
+                "condition": "target",
+                "accuracy": 0.99,
+                "macro_f1": 0.9905571582,
+                "mcc": 0.9863555616,
+                "auc": 0.9992034044,
+                "mean_true_class_probability": 0.9897687858
+            },
+            {
+                "condition": "no_mask",
+                "accuracy": 0.99,
+                "macro_f1": 0.9905571582,
+                "mcc": 0.9863555616,
+                "auc": 0.9992087713,
+                "mean_true_class_probability": 0.9893786418
+            },
+            {
+                "condition": "corrupted",
+                "accuracy": 0.99,
+                "macro_f1": 0.9905571582,
+                "mcc": 0.9863555616,
+                "auc": 0.9990622585,
+                "mean_true_class_probability": 0.9893708879
+            }
+        ],
+        "paired_statistics": [
+            {
+                "comparison": "predicted_vs_target",
+                "n": 1000,
+                "prediction_changes": 0,
+                "correctness_changes": 0,
+                "gains": 0,
+                "losses": 0,
+                "mean_true_probability_delta": 2.88773e-05,
+                "median_true_probability_delta": 0.0,
+                "mean_absolute_probability_delta": 3.77367e-05,
+                "mcnemar_exact_p": 1.0,
+                "wilcoxon_statistic": 50.5,
+                "wilcoxon_p": 0.0403953306
+            },
+            {
+                "comparison": "predicted_vs_no_mask",
+                "n": 1000,
+                "prediction_changes": 0,
+                "correctness_changes": 0,
+                "gains": 0,
+                "losses": 0,
+                "mean_true_probability_delta": -0.0003612667,
+                "median_true_probability_delta": 0.0,
+                "mean_absolute_probability_delta": 0.0004438361,
+                "mcnemar_exact_p": 1.0,
+                "wilcoxon_statistic": 68.0,
+                "wilcoxon_p": 0.0033855333
+            },
+            {
+                "comparison": "predicted_vs_corrupted",
+                "n": 1000,
+                "prediction_changes": 0,
+                "correctness_changes": 0,
+                "gains": 0,
+                "losses": 0,
+                "mean_true_probability_delta": -0.0003690206,
+                "median_true_probability_delta": 0.0,
+                "mean_absolute_probability_delta": 0.0004494052,
+                "mcnemar_exact_p": 1.0,
+                "wilcoxon_statistic": 80.0,
+                "wilcoxon_p": 0.0084177466
+            }
+        ]
+    },
+    "gradcam_plus_plus": {
+        "overall": {
+            "n": 150,
+            "correct_classifications": 148,
+            "incorrect_classifications": 2,
+            "xai_dice": 0.34175114909000665,
+            "xai_dice_std": 0.2526602764050763,
+            "median_xai_dice": 0.3343865612887764,
+            "xai_iou": 0.2360654548823529,
+            "pointing_game": 0.37333333333333335,
+            "tumor_saliency_fraction": 0.1949617135499171,
+            "cam_area_ratio": 0.03715891520182291,
+            "degenerate_cams": 17
+        },
+        "classwise": [
+            {
+                "class_name": "glioma",
+                "n": 50,
+                "correct": 50,
+                "xai_dice": 0.3298859288,
+                "xai_iou": 0.2235664326,
+                "pointing_game": 0.48,
+                "tumor_saliency_fraction": 0.2206870523,
+                "cam_area_ratio": 0.0558227539
+            },
+            {
+                "class_name": "meningioma",
+                "n": 50,
+                "correct": 49,
+                "xai_dice": 0.3739490469,
+                "xai_iou": 0.2820001916,
+                "pointing_game": 0.46,
+                "tumor_saliency_fraction": 0.252665959,
+                "cam_area_ratio": 0.0224813843
+            },
+            {
+                "class_name": "pituitary",
+                "n": 50,
+                "correct": 49,
+                "xai_dice": 0.3214184716,
+                "xai_iou": 0.2026297405,
+                "pointing_game": 0.18,
+                "tumor_saliency_fraction": 0.1115321294,
+                "cam_area_ratio": 0.0331726074
+            }
+        ],
+        "planewise": [
+            {
+                "plane": "axial",
+                "n": 50,
+                "correct": 50,
+                "xai_dice": 0.3106899844,
+                "xai_iou": 0.2156747719,
+                "pointing_game": 0.32,
+                "tumor_saliency_fraction": 0.1875566912,
+                "cam_area_ratio": 0.0323791504
+            },
+            {
+                "plane": "coronal",
+                "n": 50,
+                "correct": 48,
+                "xai_dice": 0.3015663379,
+                "xai_iou": 0.2037365577,
+                "pointing_game": 0.34,
+                "tumor_saliency_fraction": 0.1834234051,
+                "cam_area_ratio": 0.0353323364
+            },
+            {
+                "plane": "sagittal",
+                "n": 50,
+                "correct": 50,
+                "xai_dice": 0.412997125,
+                "xai_iou": 0.288785035,
+                "pointing_game": 0.46,
+                "tumor_saliency_fraction": 0.2139050443,
+                "cam_area_ratio": 0.0437652588
+            }
+        ]
+    },
+    "causal_faithfulness": {
+        "overall": {
+            "n": 150,
+            "mean_delta_p_tumor": 0.27648864790599154,
+            "median_delta_p_tumor": 1.2516975402832031e-06,
+            "mean_delta_p_background": 0.00015448729197184246,
+            "median_delta_p_background": 0.0,
+            "mean_faithfulness_margin": 0.27633416061401966,
+            "median_faithfulness_margin": 1.1920928955078125e-06,
+            "tumor_greater_than_background": 0.62,
+            "tumor_flip_rate": 0.28,
+            "background_flip_rate": 0.0
+        },
+        "wilcoxon": {
+            "statistic": 7928.5,
+            "p_value": 3.296247184685585e-08,
+            "alternative": "greater"
+        },
+        "bootstrap_margin_ci": {
+            "mean": 0.27633416061401966,
+            "lower": 0.2051388957605976,
+            "upper": 0.3499193489551707,
+            "n_bootstrap": 10000,
+            "confidence_level": 0.95
+        },
+        "classwise": [
+            {
+                "class_name": "glioma",
+                "n": 50,
+                "mean_delta_p_tumor": 0.6161815147,
+                "mean_delta_p_background": 1.884e-07,
+                "mean_faithfulness_margin": 0.6161813263,
+                "tumor_greater_than_background": 0.88,
+                "tumor_flip_rate": 0.62,
+                "background_flip_rate": 0.0
+            },
+            {
+                "class_name": "meningioma",
+                "n": 50,
+                "mean_delta_p_tumor": 0.1546158611,
+                "mean_delta_p_background": 0.0004496789,
+                "mean_faithfulness_margin": 0.1541661822,
+                "tumor_greater_than_background": 0.44,
+                "tumor_flip_rate": 0.16,
+                "background_flip_rate": 0.0
+            },
+            {
+                "class_name": "pituitary",
+                "n": 50,
+                "mean_delta_p_tumor": 0.0586685679,
+                "mean_delta_p_background": 1.35946e-05,
+                "mean_faithfulness_margin": 0.0586549733,
+                "tumor_greater_than_background": 0.54,
+                "tumor_flip_rate": 0.06,
+                "background_flip_rate": 0.0
+            }
+        ],
+        "planewise": [
+            {
+                "plane": "axial",
+                "n": 50,
+                "mean_delta_p_tumor": 0.2955719016,
+                "mean_delta_p_background": 7.484e-06,
+                "mean_faithfulness_margin": 0.2955644176,
+                "tumor_greater_than_background": 0.62,
+                "tumor_flip_rate": 0.3,
+                "background_flip_rate": 0.0
+            },
+            {
+                "plane": "coronal",
+                "n": 50,
+                "mean_delta_p_tumor": 0.27394477,
+                "mean_delta_p_background": 0.0004560804,
+                "mean_faithfulness_margin": 0.2734886896,
+                "tumor_greater_than_background": 0.64,
+                "tumor_flip_rate": 0.28,
+                "background_flip_rate": 0.0
+            },
+            {
+                "plane": "sagittal",
+                "n": 50,
+                "mean_delta_p_tumor": 0.2599492721,
+                "mean_delta_p_background": -1.025e-07,
+                "mean_faithfulness_margin": 0.2599493746,
+                "tumor_greater_than_background": 0.6,
+                "tumor_flip_rate": 0.26,
+                "background_flip_rate": 0.0
+            }
+        ]
+    },
+    "no_tumor_safety": {
+        "overall": {
+            "n": 140,
+            "classification_accuracy": 1.0,
+            "mean_no_tumor_probability": 0.9999958464077541,
+            "mean_tumor_probability": 4.149999243249372e-06,
+            "mean_false_tumor_area_ratio": 0.0,
+            "median_false_tumor_area_ratio": 0.0,
+            "max_false_tumor_area_ratio": 0.0,
+            "empty_prediction_rate": 1.0,
+            "false_tumor_detection_rate": 0.0,
+            "mean_max_segmentation_probability": 0.025482182277898703
+        },
+        "planewise": [
+            {
+                "plane": "axial",
+                "n": 52,
+                "classification_accuracy": 1.0,
+                "mean_no_tumor_probability": 0.9999947571,
+                "mean_tumor_probability": 5.2367e-06,
+                "mean_false_tumor_area_ratio": 0.0,
+                "median_false_tumor_area_ratio": 0.0,
+                "max_false_tumor_area_ratio": 0.0,
+                "empty_prediction_rate": 1.0,
+                "false_tumor_detection_rate": 0.0,
+                "mean_max_segmentation_probability": 0.0306445438
+            },
+            {
+                "plane": "coronal",
+                "n": 48,
+                "classification_accuracy": 1.0,
+                "mean_no_tumor_probability": 0.9999964212,
+                "mean_tumor_probability": 3.5778e-06,
+                "mean_false_tumor_area_ratio": 0.0,
+                "median_false_tumor_area_ratio": 0.0,
+                "max_false_tumor_area_ratio": 0.0,
+                "empty_prediction_rate": 1.0,
+                "false_tumor_detection_rate": 0.0,
+                "mean_max_segmentation_probability": 0.0174868451
+            },
+            {
+                "plane": "sagittal",
+                "n": 40,
+                "classification_accuracy": 1.0,
+                "mean_no_tumor_probability": 0.9999965727,
+                "mean_tumor_probability": 3.4239e-06,
+                "mean_false_tumor_area_ratio": 0.0,
+                "median_false_tumor_area_ratio": 0.0,
+                "max_false_tumor_area_ratio": 0.0,
+                "empty_prediction_rate": 1.0,
+                "false_tumor_detection_rate": 0.0,
+                "mean_max_segmentation_probability": 0.028365517
+            }
+        ]
+    },
+    "calibration": [
+        {
+            "model": "EfficientNet-B0",
+            "accuracy": 0.996,
+            "mean_confidence": 0.9976786,
+            "confidence_minus_accuracy": 0.0016786,
+            "ece_15_bins": 0.003536,
+            "multiclass_brier": 0.0076493419
+        },
+        {
+            "model": "TrustSeg-XAI",
+            "accuracy": 0.99,
+            "mean_confidence": 0.9993751,
+            "confidence_minus_accuracy": 0.0093751,
+            "ece_15_bins": 0.0099901,
+            "multiclass_brier": 0.0194381392
+        },
+        {
+            "model": "ConvNeXt-Tiny",
+            "accuracy": 0.986,
+            "mean_confidence": 0.9960552191,
+            "confidence_minus_accuracy": 0.0100552191,
+            "ece_15_bins": 0.0113823023,
+            "multiclass_brier": 0.0248531453
+        }
+    ],
+    "mcnemar": [
+        {
+            "model_a": "EfficientNet-B0",
+            "model_b": "ConvNeXt-Tiny",
+            "accuracy_a": 0.996,
+            "accuracy_b": 0.986,
+            "accuracy_difference_a_minus_b": 0.01,
+            "a_correct_b_wrong": 12,
+            "a_wrong_b_correct": 2,
+            "discordant": 14,
+            "p_value": 0.0129394531,
+            "significant_at_0.05": true
+        },
+        {
+            "model_a": "EfficientNet-B0",
+            "model_b": "TrustSeg-XAI",
+            "accuracy_a": 0.996,
+            "accuracy_b": 0.99,
+            "accuracy_difference_a_minus_b": 0.006,
+            "a_correct_b_wrong": 9,
+            "a_wrong_b_correct": 3,
+            "discordant": 12,
+            "p_value": 0.1459960938,
+            "significant_at_0.05": false
+        },
+        {
+            "model_a": "ConvNeXt-Tiny",
+            "model_b": "TrustSeg-XAI",
+            "accuracy_a": 0.986,
+            "accuracy_b": 0.99,
+            "accuracy_difference_a_minus_b": -0.004,
+            "a_correct_b_wrong": 6,
+            "a_wrong_b_correct": 10,
+            "discordant": 16,
+            "p_value": 0.454498291,
+            "significant_at_0.05": false
+        }
+    ],
+    "bootstrap_confidence_intervals": [
+        {
+            "endpoint_group": "EfficientNet-B0",
+            "metric": "accuracy",
+            "n": 1000,
+            "estimate": 0.996,
+            "ci_lower": 0.992,
+            "ci_upper": 0.999,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint_group": "EfficientNet-B0",
+            "metric": "macro_f1",
+            "n": 1000,
+            "estimate": 0.9965443062,
+            "ci_lower": 0.9929004348,
+            "ci_upper": 0.9991970263,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint_group": "ConvNeXt-Tiny",
+            "metric": "accuracy",
+            "n": 1000,
+            "estimate": 0.986,
+            "ci_lower": 0.978,
+            "ci_upper": 0.993,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint_group": "ConvNeXt-Tiny",
+            "metric": "macro_f1",
+            "n": 1000,
+            "estimate": 0.9872406066,
+            "ci_lower": 0.979987275,
+            "ci_upper": 0.9935029026,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint_group": "TrustSeg-XAI",
+            "metric": "accuracy",
+            "n": 1000,
+            "estimate": 0.99,
+            "ci_lower": 0.984,
+            "ci_upper": 0.996,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint_group": "TrustSeg-XAI",
+            "metric": "macro_f1",
+            "n": 1000,
+            "estimate": 0.9905571582,
+            "ci_lower": 0.9843568312,
+            "ci_upper": 0.996081884,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint_group": "TrustSeg expert segmentation Dice",
+            "metric": "mean",
+            "n": 860,
+            "estimate": 0.8392228497,
+            "ci_lower": 0.8280311509,
+            "ci_upper": 0.8495356157,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint_group": "Grad-CAM++ XAI IoU",
+            "metric": "mean",
+            "n": 150,
+            "estimate": 0.2360654549,
+            "ci_lower": 0.2044199545,
+            "ci_upper": 0.2684619713,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint_group": "Causal faithfulness margin",
+            "metric": "mean",
+            "n": 150,
+            "estimate": 0.2763341606,
+            "ci_lower": 0.2051388958,
+            "ci_upper": 0.349919349,
+            "bootstrap_n": 10000
+        }
+    ],
+    "data_policy": {
+        "official_test_used_for_tuning": false,
+        "final_model_locked_before_test_analysis": true,
+        "test_driven_retraining": false
+    }
+}

@@ -1,0 +1,13 @@
+type,name,path,exists
+figure,figure1_classification_performance.png,D:\brain_tumor\phase16_final_outputs\figures\figure1_classification_performance.png,True
+figure,figure2_segmentation_dice.png,D:\brain_tumor\phase16_final_outputs\figures\figure2_segmentation_dice.png,True
+figure,figure3_calibration_ece.png,D:\brain_tumor\phase16_final_outputs\figures\figure3_calibration_ece.png,True
+figure,figure4_reliability_convnext_tiny.png,D:\brain_tumor\phase16_final_outputs\figures\figure4_reliability_convnext_tiny.png,True
+figure,figure4_reliability_efficientnet_b0.png,D:\brain_tumor\phase16_final_outputs\figures\figure4_reliability_efficientnet_b0.png,True
+figure,figure4_reliability_trustseg_xai.png,D:\brain_tumor\phase16_final_outputs\figures\figure4_reliability_trustseg_xai.png,True
+figure,figure5_mask_dependency_probability_effect.png,D:\brain_tumor\phase16_final_outputs\figures\figure5_mask_dependency_probability_effect.png,True
+figure,figure6_gradcam_classwise_dice.png,D:\brain_tumor\phase16_final_outputs\figures\figure6_gradcam_classwise_dice.png,True
+figure,figure7_causal_faithfulness_classwise.png,D:\brain_tumor\phase16_final_outputs\figures\figure7_causal_faithfulness_classwise.png,True
+summary,figure_manifest.csv,D:\brain_tumor\phase16_final_outputs\summary\figure_manifest.csv,True
+summary,paper_ready_results_summary.md,D:\brain_tumor\phase16_final_outputs\summary\paper_ready_results_summary.md,True
+summary,trustseg_xai_final_master_results.json,D:\brain_tumor\phase16_final_outputs\summary\trustseg_xai_final_master_results.json,True

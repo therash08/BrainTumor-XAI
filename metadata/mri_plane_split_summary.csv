@@ -1,0 +1,7 @@
+split,plane,count
+test,axial,398
+test,coronal,305
+test,sagittal,297
+train,axial,1595
+train,coronal,1676
+train,sagittal,1729

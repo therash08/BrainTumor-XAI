@@ -1,0 +1,62 @@
+[
+  {
+    "old_name": "phase4_unet_resnet34",
+    "new_name": "unet_resnet34",
+    "status": "✅ Renamed: phase4_unet_resnet34 -> unet_resnet34"
+  },
+  {
+    "old_name": "phase5_unetplusplus_resnet34",
+    "new_name": "unetplusplus_resnet34",
+    "status": "✅ Renamed: phase5_unetplusplus_resnet34 -> unetplusplus_resnet34"
+  },
+  {
+    "old_name": "phase6_efficientnet_b0",
+    "new_name": "efficientnet_b0",
+    "status": "✅ Renamed: phase6_efficientnet_b0 -> efficientnet_b0"
+  },
+  {
+    "old_name": "phase7_convnext_tiny",
+    "new_name": "convnext_tiny",
+    "status": "✅ Renamed: phase7_convnext_tiny -> convnext_tiny"
+  },
+  {
+    "old_name": "phase8_trustseg_xai",
+    "new_name": "trustseg_xai",
+    "status": "✅ Renamed: phase8_trustseg_xai -> trustseg_xai"
+  },
+  {
+    "old_name": "phase10_mask_dependency",
+    "new_name": "mask_dependency",
+    "status": "✅ Renamed: phase10_mask_dependency -> mask_dependency"
+  },
+  {
+    "old_name": "phase11_gradcampp",
+    "new_name": "gradcampp",
+    "status": "✅ Renamed: phase11_gradcampp -> gradcampp"
+  },
+  {
+    "old_name": "phase12_causal_faithfulness",
+    "new_name": "causal_faithfulness",
+    "status": "✅ Renamed: phase12_causal_faithfulness -> causal_faithfulness"
+  },
+  {
+    "old_name": "phase13_no_tumor_safety",
+    "new_name": "no_tumor_safety",
+    "status": "✅ Renamed: phase13_no_tumor_safety -> no_tumor_safety"
+  },
+  {
+    "old_name": "phase14_calibration",
+    "new_name": "calibration",
+    "status": "✅ Renamed: phase14_calibration -> calibration"
+  },
+  {
+    "old_name": "phase15_statistical_analysis",
+    "new_name": "statistical_analysis",
+    "status": "✅ Renamed: phase15_statistical_analysis -> statistical_analysis"
+  },
+  {
+    "old_name": "phase16_final_outputs",
+    "new_name": "final_outputs",
+    "status": "✅ Renamed: phase16_final_outputs -> final_outputs"
+  }
+]

@@ -1,0 +1,9 @@
+split,class,original_folder,image_count
+train,glioma,glioma,1147
+train,meningioma,meningioma,1329
+train,no_tumor,no_tumor,1067
+train,pituitary,pituitary,1457
+test,glioma,glioma,254
+test,meningioma,meningioma,306
+test,no_tumor,no_tumor,140
+test,pituitary,pituitary,300

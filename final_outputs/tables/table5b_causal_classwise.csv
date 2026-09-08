@@ -1,0 +1,4 @@
+class_name,n,mean_delta_p_tumor,mean_delta_p_background,mean_faithfulness_margin,tumor_greater_than_background,tumor_flip_rate,background_flip_rate
+glioma,50,0.6161815146660422,1.883506774902344e-07,0.6161813263153647,0.88,0.62,0.0
+meningioma,50,0.1546158611291366,0.0004496788978576,0.1541661822312789,0.44,0.16,0.0
+pituitary,50,0.0586685679227957,1.3594627380371094e-05,0.0586549732954154,0.54,0.06,0.0

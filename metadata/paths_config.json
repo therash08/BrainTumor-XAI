@@ -1,0 +1,14 @@
+{
+    "project_root": "D:\\brain_tumor",
+    "dataset_root": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset",
+    "classification_root": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\classification_task",
+    "classification_train": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\classification_task\\train",
+    "classification_test": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\classification_task\\test",
+    "segmentation_root": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\segmentation_task",
+    "segmentation_train": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\segmentation_task\\train",
+    "segmentation_test": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\segmentation_task\\test",
+    "segmentation_train_images": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\segmentation_task\\train\\images",
+    "segmentation_train_masks": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\segmentation_task\\train\\masks",
+    "segmentation_test_images": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\segmentation_task\\test\\images",
+    "segmentation_test_masks": "D:\\brain_tumor\\🧠 Brain Tumor MRI Dataset\\segmentation_task\\test\\masks"
+}

@@ -1,0 +1,2 @@
+n,correct_classifications,xai_dice,xai_iou,xai_iou_95ci,pointing_game,tumor_saliency_fraction,degenerate_cams
+150,148,0.34175114909000665,0.2360654548823529,"0.2361 [0.2044, 0.2685]",0.37333333333333335,0.1949617135499171,17

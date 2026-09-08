@@ -1,0 +1,2 @@
+n,classification_accuracy,mean_no_tumor_probability,mean_tumor_probability,mean_false_tumor_area_ratio,median_false_tumor_area_ratio,max_false_tumor_area_ratio,empty_prediction_rate,false_tumor_detection_rate,mean_max_segmentation_probability
+140,1.0,0.9999958464077541,4.149999243249372e-06,0.0,0.0,0.0,1.0,0.0,0.025482182277898703
