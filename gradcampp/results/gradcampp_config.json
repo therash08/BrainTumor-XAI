@@ -1,0 +1,23 @@
+{
+    "model": "TrustSeg-XAI",
+    "checkpoint_epoch": 13,
+    "subset_n": 150,
+    "seed": 42,
+    "class_balance": {
+        "glioma": 50,
+        "meningioma": 50,
+        "pituitary": 50
+    },
+    "plane_balance": {
+        "axial": 50,
+        "coronal": 50,
+        "sagittal": 50
+    },
+    "target_class": "locked Phase 9 predicted class",
+    "target_feature": "deepest ConvNeXt encoder feature map",
+    "method": "Grad-CAM++",
+    "cam_threshold": 0.5,
+    "cam_normalization": "per-image min-max [0,1]",
+    "evaluation_mask": "expert tumor segmentation",
+    "official_test_used_for_tuning": false
+}

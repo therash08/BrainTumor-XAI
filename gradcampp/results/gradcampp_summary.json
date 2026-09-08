@@ -1,0 +1,88 @@
+{
+    "overall": {
+        "n": 150,
+        "correct_classifications": 148,
+        "incorrect_classifications": 2,
+        "xai_dice": 0.34175114909000665,
+        "xai_dice_std": 0.2526602764050763,
+        "median_xai_dice": 0.3343865612887764,
+        "xai_iou": 0.2360654548823529,
+        "pointing_game": 0.37333333333333335,
+        "tumor_saliency_fraction": 0.1949617135499171,
+        "cam_area_ratio": 0.03715891520182291,
+        "degenerate_cams": 17
+    },
+    "class_metrics": [
+        {
+            "class_name": "glioma",
+            "n": 50,
+            "correct": 50,
+            "xai_dice": 0.3298859288227876,
+            "xai_iou": 0.22356643256979147,
+            "pointing_game": 0.48,
+            "tumor_saliency_fraction": 0.2206870522779402,
+            "cam_area_ratio": 0.05582275390625
+        },
+        {
+            "class_name": "meningioma",
+            "n": 50,
+            "correct": 49,
+            "xai_dice": 0.3739490468509246,
+            "xai_iou": 0.2820001915857222,
+            "pointing_game": 0.46,
+            "tumor_saliency_fraction": 0.25266595896514393,
+            "cam_area_ratio": 0.02248138427734375
+        },
+        {
+            "class_name": "pituitary",
+            "n": 50,
+            "correct": 49,
+            "xai_dice": 0.32141847159630776,
+            "xai_iou": 0.2026297404915451,
+            "pointing_game": 0.18,
+            "tumor_saliency_fraction": 0.11153212940666717,
+            "cam_area_ratio": 0.033172607421875
+        }
+    ],
+    "plane_metrics": [
+        {
+            "plane": "axial",
+            "n": 50,
+            "correct": 50,
+            "xai_dice": 0.3106899843549866,
+            "xai_iou": 0.2156747718682771,
+            "pointing_game": 0.32,
+            "tumor_saliency_fraction": 0.1875566912165316,
+            "cam_area_ratio": 0.032379150390625
+        },
+        {
+            "plane": "coronal",
+            "n": 50,
+            "correct": 48,
+            "xai_dice": 0.3015663378866544,
+            "xai_iou": 0.2037365577415491,
+            "pointing_game": 0.34,
+            "tumor_saliency_fraction": 0.18342340514114014,
+            "cam_area_ratio": 0.03533233642578125
+        },
+        {
+            "plane": "sagittal",
+            "n": 50,
+            "correct": 50,
+            "xai_dice": 0.4129971250283788,
+            "xai_iou": 0.2887850350372326,
+            "pointing_game": 0.46,
+            "tumor_saliency_fraction": 0.21390504429207965,
+            "cam_area_ratio": 0.0437652587890625
+        }
+    ],
+    "previous_reference": {
+        "n": 150,
+        "correct_classifications": 146,
+        "xai_dice": 0.065,
+        "xai_iou": 0.0417,
+        "pointing_game": 0.1133,
+        "tumor_saliency_fraction": 0.0572
+    },
+    "official_test_used_for_tuning": false
+}

@@ -1,0 +1,7 @@
+metric,current_local,previous_reference,difference
+mean_delta_p_tumor,0.27648864790599154,0.3301,-0.05361135209400847
+mean_delta_p_background,0.00015448729197184246,0.0124,-0.012245512708028157
+mean_faithfulness_margin,0.27633416061401966,0.3176,-0.04126583938598033
+tumor_greater_than_background,0.62,0.6333,-0.013299999999999979
+tumor_flip_rate,0.28,0.34,-0.06
+background_flip_rate,0.0,0.02,-0.02

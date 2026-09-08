@@ -1,0 +1,5 @@
+condition,local_accuracy,previous_accuracy,local_macro_f1,previous_macro_f1
+predicted,0.99,0.978,0.9905571582452646,0.9795
+target,0.99,0.978,0.9905571582452646,0.9795
+no_mask,0.99,0.976,0.9905571582452646,0.9773
+corrupted,0.99,0.975,0.9905571582452646,0.9765

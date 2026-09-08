@@ -1,0 +1,4 @@
+comparison,n,prediction_changes,correctness_changes,gains,losses,mean_true_probability_delta,median_true_probability_delta,mean_absolute_probability_delta,mcnemar_exact_p,wilcoxon_statistic,wilcoxon_p
+predicted_vs_target,1000,0,0,0,0,2.8877317905426025e-05,0.0,3.7736713886260984e-05,1.0,50.5,0.040395330636889534
+predicted_vs_no_mask,1000,0,0,0,0,-0.00036126673221588136,0.0,0.00044383609294891356,1.0,68.0,0.0033855333245144947
+predicted_vs_corrupted,1000,0,0,0,0,-0.00036902058124542236,0.0,0.0004494051933288574,1.0,80.0,0.008417746610317592

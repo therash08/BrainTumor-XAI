@@ -1,0 +1,14 @@
+{
+    "model": "TrustSeg-XAI",
+    "checkpoint_epoch": 13,
+    "subset_source": "D:\\brain_tumor\\phase11_gradcampp\\results\\gradcampp_fixed_stratified_150.csv",
+    "subset_n": 150,
+    "target_class": "locked Phase 9 predicted class",
+    "tumor_occlusion": "expert tumor pixels set to zero in normalized image space",
+    "background_control": "translated exact tumor-mask shape in non-overlapping background when possible; deterministic exact-area fallback otherwise",
+    "occlusion_fill_value": 0.0,
+    "wilcoxon_alternative": "delta_p_tumor > delta_p_background",
+    "bootstrap_iterations": 10000,
+    "bootstrap_seed": 42,
+    "official_test_used_for_tuning": false
+}

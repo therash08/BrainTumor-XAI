@@ -1,0 +1,10 @@
+{
+    "model": "TrustSeg-XAI",
+    "checkpoint_epoch": 13,
+    "no_tumor_test_n": 140,
+    "segmentation_threshold": 0.5,
+    "false_tumor_detection_definition": "at least one segmentation pixel >= 0.5",
+    "false_tumor_area_ratio_definition": "predicted positive segmentation pixels / total image pixels",
+    "tumor_probability_definition": "P(glioma) + P(meningioma) + P(pituitary)",
+    "official_test_used_for_tuning": false
+}

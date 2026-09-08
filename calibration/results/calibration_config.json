@@ -1,0 +1,17 @@
+{
+    "models": [
+        "EfficientNet-B0",
+        "ConvNeXt-Tiny",
+        "TrustSeg-XAI"
+    ],
+    "official_test_n_per_model": 1000,
+    "exact_paired_mri": 1000,
+    "ece_bins": 15,
+    "ece_bin_type": "equal-width",
+    "confidence_definition": "maximum original saved class probability",
+    "brier_definition": "mean across MRI of sum over four classes of (probability - one_hot_target)^2",
+    "probability_renormalization": false,
+    "temperature_scaling": false,
+    "posthoc_calibration_fitting": false,
+    "official_test_used_for_tuning": false
+}

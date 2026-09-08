@@ -1,0 +1,103 @@
+{
+    "overall": {
+        "n": 150,
+        "mean_delta_p_tumor": 0.27648864790599154,
+        "median_delta_p_tumor": 1.2516975402832031e-06,
+        "mean_delta_p_background": 0.00015448729197184246,
+        "median_delta_p_background": 0.0,
+        "mean_faithfulness_margin": 0.27633416061401966,
+        "median_faithfulness_margin": 1.1920928955078125e-06,
+        "tumor_greater_than_background": 0.62,
+        "tumor_flip_rate": 0.28,
+        "background_flip_rate": 0.0
+    },
+    "wilcoxon": {
+        "statistic": 7928.5,
+        "p_value": 3.296247184685585e-08,
+        "alternative": "greater"
+    },
+    "bootstrap_margin_ci": {
+        "mean": 0.27633416061401966,
+        "lower": 0.2051388957605976,
+        "upper": 0.3499193489551707,
+        "n_bootstrap": 10000,
+        "confidence_level": 0.95
+    },
+    "class_metrics": [
+        {
+            "class_name": "glioma",
+            "n": 50,
+            "mean_delta_p_tumor": 0.6161815146660422,
+            "mean_delta_p_background": 1.8835067749023438e-07,
+            "mean_faithfulness_margin": 0.6161813263153647,
+            "tumor_greater_than_background": 0.88,
+            "tumor_flip_rate": 0.62,
+            "background_flip_rate": 0.0
+        },
+        {
+            "class_name": "meningioma",
+            "n": 50,
+            "mean_delta_p_tumor": 0.15461586112913664,
+            "mean_delta_p_background": 0.000449678897857666,
+            "mean_faithfulness_margin": 0.15416618223127898,
+            "tumor_greater_than_background": 0.44,
+            "tumor_flip_rate": 0.16,
+            "background_flip_rate": 0.0
+        },
+        {
+            "class_name": "pituitary",
+            "n": 50,
+            "mean_delta_p_tumor": 0.058668567922795775,
+            "mean_delta_p_background": 1.3594627380371094e-05,
+            "mean_faithfulness_margin": 0.0586549732954154,
+            "tumor_greater_than_background": 0.54,
+            "tumor_flip_rate": 0.06,
+            "background_flip_rate": 0.0
+        }
+    ],
+    "plane_metrics": [
+        {
+            "plane": "axial",
+            "n": 50,
+            "mean_delta_p_tumor": 0.29557190160438496,
+            "mean_delta_p_background": 7.483959197998047e-06,
+            "mean_faithfulness_margin": 0.2955644176451869,
+            "tumor_greater_than_background": 0.62,
+            "tumor_flip_rate": 0.3,
+            "background_flip_rate": 0.0
+        },
+        {
+            "plane": "coronal",
+            "n": 50,
+            "mean_delta_p_tumor": 0.2739447699897545,
+            "mean_delta_p_background": 0.000456080436706543,
+            "mean_faithfulness_margin": 0.27348868955304795,
+            "tumor_greater_than_background": 0.64,
+            "tumor_flip_rate": 0.28,
+            "background_flip_rate": 0.0
+        },
+        {
+            "plane": "sagittal",
+            "n": 50,
+            "mean_delta_p_tumor": 0.2599492721238352,
+            "mean_delta_p_background": -1.0251998901367187e-07,
+            "mean_faithfulness_margin": 0.25994937464382417,
+            "tumor_greater_than_background": 0.6,
+            "tumor_flip_rate": 0.26,
+            "background_flip_rate": 0.0
+        }
+    ],
+    "previous_reference": {
+        "mean_delta_p_tumor": 0.3301,
+        "mean_delta_p_background": 0.0124,
+        "mean_faithfulness_margin": 0.3176,
+        "tumor_greater_than_background": 0.6333,
+        "tumor_flip_rate": 0.34,
+        "background_flip_rate": 0.02,
+        "wilcoxon_p": 7.36e-10,
+        "bootstrap_ci_lower": 0.2524,
+        "bootstrap_ci_upper": 0.3884
+    },
+    "baseline_mismatches": 0,
+    "official_test_used_for_tuning": false
+}

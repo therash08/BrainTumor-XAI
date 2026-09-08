@@ -1,0 +1,20 @@
+{
+    "model": "U-Net ResNet34",
+    "train_expert_mri": 3312,
+    "validation_expert_mri": 585,
+    "official_test_expert_mri": 860,
+    "best_epoch": 13,
+    "best_validation_dice": 0.8290051885140248,
+    "best_validation_metrics": {
+        "loss": 0.09995381886887754,
+        "dice": 0.8290051885140248,
+        "iou": 0.7329536173078749,
+        "precision": 0.8461277517498049,
+        "recall": 0.8417390217128982,
+        "specificity": 0.9974455977097536
+    },
+    "training_epochs_completed": 15,
+    "training_minutes": 18.835129503409068,
+    "checkpoint": "D:\\brain_tumor\\phase4_unet_resnet34\\checkpoints\\unet_resnet34_best.pth",
+    "official_test_used_for_model_selection": false
+}

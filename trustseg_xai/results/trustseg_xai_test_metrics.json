@@ -1,0 +1,156 @@
+{
+    "model": "TrustSeg-XAI",
+    "parameter_count": 34346117,
+    "best_epoch": 13,
+    "best_validation_selection_score": 0.9143462902562398,
+    "classification_test_n": 1000,
+    "expert_segmentation_test_n": 860,
+    "segmentation_threshold": 0.5,
+    "classification_metrics": {
+        "accuracy": 0.99,
+        "macro_precision": 0.989701366547576,
+        "macro_recall": 0.9914465287427308,
+        "macro_f1": 0.9905571582452646,
+        "mcc": 0.9863555615692742,
+        "auc": 0.9992193679882435,
+        "loss": 0.07236830425262451,
+        "n": 1000
+    },
+    "segmentation_metrics": {
+        "n": 860,
+        "dice": 0.8392228496910085,
+        "median_dice": 0.890656216490088,
+        "dice_std": 0.16383684089199382,
+        "iou": 0.7477829246944291,
+        "precision": 0.8659625741614562,
+        "recall": 0.840962820237503,
+        "specificity": 0.9978702377453506,
+        "hd95": 7.907167778141584,
+        "hd95_penalized": 9.966071872265832,
+        "empty_predictions": 5
+    },
+    "classification_class_distribution": {
+        "glioma": 254,
+        "meningioma": 306,
+        "pituitary": 300,
+        "no_tumor": 140
+    },
+    "expert_segmentation_plane_distribution": {
+        "axial": 346,
+        "coronal": 257,
+        "sagittal": 257
+    },
+    "per_class_classification": [
+        {
+            "class_idx": 0,
+            "class_name": "glioma",
+            "precision": 0.9960474308300395,
+            "recall": 0.9921259842519685,
+            "f1": 0.9940828402366864,
+            "support": 254,
+            "auc": 0.9992585125920923
+        },
+        {
+            "class_idx": 1,
+            "class_name": "meningioma",
+            "precision": 0.9901315789473685,
+            "recall": 0.9836601307189542,
+            "f1": 0.9868852459016394,
+            "support": 306,
+            "auc": 0.9991618165037388
+        },
+        {
+            "class_idx": 2,
+            "class_name": "pituitary",
+            "precision": 0.9867109634551495,
+            "recall": 0.99,
+            "f1": 0.9883527454242929,
+            "support": 300,
+            "auc": 0.9984571428571428
+        },
+        {
+            "class_idx": 3,
+            "class_name": "no_tumor",
+            "precision": 0.9859154929577465,
+            "recall": 1.0,
+            "f1": 0.9929078014184397,
+            "support": 140,
+            "auc": 1.0
+        }
+    ],
+    "classification_plane_metrics": [
+        {
+            "plane": "axial",
+            "n": 398,
+            "accuracy": 0.9874371859296482,
+            "macro_precision": 0.9847883597883598,
+            "macro_recall": 0.9895682419424092,
+            "macro_f1": 0.9870362012518195,
+            "mcc": 0.9826940831852501,
+            "auc": 0.99849990962285
+        },
+        {
+            "plane": "coronal",
+            "n": 305,
+            "accuracy": 0.9934426229508196,
+            "macro_precision": 0.9943152454780362,
+            "macro_recall": 0.9943152454780362,
+            "macro_f1": 0.9943152454780362,
+            "mcc": 0.991116159850868,
+            "auc": 0.9999210647410711
+        },
+        {
+            "plane": "sagittal",
+            "n": 297,
+            "accuracy": 0.98989898989899,
+            "macro_precision": 0.9912067099567099,
+            "macro_recall": 0.9912400659721338,
+            "macro_f1": 0.9912060846409254,
+            "mcc": 0.986219070802106,
+            "auc": 0.9991985496856874
+        }
+    ],
+    "segmentation_plane_metrics": [
+        {
+            "plane": "axial",
+            "n": 346,
+            "dice": 0.8249719569602574,
+            "median_dice": 0.887985873490649,
+            "iou": 0.7340071558754816,
+            "precision": 0.8587848625295492,
+            "recall": 0.8278295085037773,
+            "specificity": 0.997755110777616,
+            "hd95": 8.268911934251221,
+            "hd95_penalized": 12.358735749664646,
+            "empty_predictions": 4
+        },
+        {
+            "plane": "coronal",
+            "n": 257,
+            "dice": 0.8432966290950309,
+            "median_dice": 0.8924581005661691,
+            "iou": 0.750293887738264,
+            "precision": 0.8672455950550476,
+            "recall": 0.846886192361617,
+            "specificity": 0.9975640100240108,
+            "hd95": 7.154004247436731,
+            "hd95_penalized": 8.53487844090006,
+            "empty_predictions": 1
+        },
+        {
+            "plane": "sagittal",
+            "n": 257,
+            "dice": 0.8543350970762464,
+            "median_dice": 0.893881783619292,
+            "iou": 0.7638183274535354,
+            "precision": 0.8743429315738565,
+            "recall": 0.8527208716926461,
+            "specificity": 0.9983314613065195,
+            "hd95": 8.176013546511028,
+            "hd95_penalized": 8.176013546511028,
+            "empty_predictions": 0
+        }
+    ],
+    "paired_classifier_records": 1000,
+    "official_test_used_for_tuning": false
+}

@@ -1,0 +1,67 @@
+{
+    "model": "U-Net++ ResNet34",
+    "best_epoch": 12,
+    "best_validation_dice": 0.8325966297051846,
+    "selection_metric": "validation Dice",
+    "official_test_n": 860,
+    "threshold": 0.5,
+    "test_metrics": {
+        "n": 860,
+        "loss": 0.09706890440957491,
+        "dice": 0.8353101075618531,
+        "iou": 0.7436315564174741,
+        "precision": 0.8568757125328242,
+        "recall": 0.8399390909899676,
+        "specificity": 0.9975596107345099,
+        "hd95": 9.36752649871997,
+        "hd95_penalized": 10.187691953298557,
+        "empty_predictions": 2
+    },
+    "plane_metrics": [
+        {
+            "plane": "axial",
+            "n": 346,
+            "dice": 0.8239514614211255,
+            "iou": 0.7335569830003814,
+            "precision": 0.8427679557990844,
+            "recall": 0.8314024583207462,
+            "specificity": 0.9975284359502138,
+            "hd95": 9.850825195672595,
+            "hd95_penalized": 9.850825195672595,
+            "empty_predictions": 0
+        },
+        {
+            "plane": "coronal",
+            "n": 257,
+            "dice": 0.8327222048984477,
+            "iou": 0.7401804591339367,
+            "precision": 0.8618103991012761,
+            "recall": 0.8345683476896929,
+            "specificity": 0.9970931250829336,
+            "hd95": 9.351801913244387,
+            "hd95_penalized": 12.09644681639044,
+            "empty_predictions": 2
+        },
+        {
+            "plane": "sagittal",
+            "n": 257,
+            "dice": 0.8531901953018802,
+            "iou": 0.7606460871730506,
+            "precision": 0.8709343482596023,
+            "recall": 0.8568027327476373,
+            "specificity": 0.9980680671073566,
+            "hd95": 8.732461985687541,
+            "hd95_penalized": 8.732461985687541,
+            "empty_predictions": 0
+        }
+    ],
+    "previous_reference": {
+        "dice": 0.8666,
+        "iou": 0.7991,
+        "precision": 0.8776,
+        "recall": 0.8855,
+        "specificity": 0.9983,
+        "hd95": 9.9434
+    },
+    "official_test_used_for_tuning": false
+}

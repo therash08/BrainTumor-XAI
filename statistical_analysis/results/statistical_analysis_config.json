@@ -1,0 +1,17 @@
+{
+    "paired_classifier_test_n": 1000,
+    "mcnemar_test": "exact two-sided binomial McNemar",
+    "bootstrap_type": "non-parametric image-level percentile bootstrap",
+    "bootstrap_iterations": 10000,
+    "confidence_level": 0.95,
+    "classification_labels": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "trustseg_segmentation_n": 860,
+    "gradcam_subset_n": 150,
+    "causal_subset_n": 150,
+    "official_test_used_for_tuning": false
+}

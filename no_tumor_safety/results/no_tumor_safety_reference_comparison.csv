@@ -1,0 +1,7 @@
+metric,current_local,previous_reference,difference
+classification_accuracy,1.0,0.992857,0.0071430000000000105
+mean_false_tumor_area_ratio,0.0,0.000181,-0.000181
+median_false_tumor_area_ratio,0.0,0.0,0.0
+empty_prediction_rate,1.0,0.985714,0.014286000000000021
+false_tumor_detection_rate,0.0,0.014286,-0.014286
+mean_tumor_probability,4.149999243249372e-06,0.000915,-0.0009108500007567506

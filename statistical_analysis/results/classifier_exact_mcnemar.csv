@@ -1,0 +1,4 @@
+model_a,model_b,n,accuracy_a,accuracy_b,accuracy_difference_a_minus_b,both_correct,a_correct_b_wrong,a_wrong_b_correct,both_wrong,discordant,p_value
+EfficientNet-B0,ConvNeXt-Tiny,1000,0.996,0.986,0.010000000000000009,984,12,2,2,14,0.012939453125
+EfficientNet-B0,TrustSeg-XAI,1000,0.996,0.99,0.006000000000000005,987,9,3,1,12,0.14599609375
+ConvNeXt-Tiny,TrustSeg-XAI,1000,0.986,0.99,-0.0040000000000000036,980,6,10,4,16,0.454498291015625

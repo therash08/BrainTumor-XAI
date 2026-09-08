@@ -1,0 +1,163 @@
+{
+    "mcnemar": [
+        {
+            "model_a": "EfficientNet-B0",
+            "model_b": "ConvNeXt-Tiny",
+            "n": 1000,
+            "accuracy_a": 0.996,
+            "accuracy_b": 0.986,
+            "accuracy_difference_a_minus_b": 0.010000000000000009,
+            "both_correct": 984,
+            "a_correct_b_wrong": 12,
+            "a_wrong_b_correct": 2,
+            "both_wrong": 2,
+            "discordant": 14,
+            "p_value": 0.012939453125
+        },
+        {
+            "model_a": "EfficientNet-B0",
+            "model_b": "TrustSeg-XAI",
+            "n": 1000,
+            "accuracy_a": 0.996,
+            "accuracy_b": 0.99,
+            "accuracy_difference_a_minus_b": 0.006000000000000005,
+            "both_correct": 987,
+            "a_correct_b_wrong": 9,
+            "a_wrong_b_correct": 3,
+            "both_wrong": 1,
+            "discordant": 12,
+            "p_value": 0.14599609375
+        },
+        {
+            "model_a": "ConvNeXt-Tiny",
+            "model_b": "TrustSeg-XAI",
+            "n": 1000,
+            "accuracy_a": 0.986,
+            "accuracy_b": 0.99,
+            "accuracy_difference_a_minus_b": -0.0040000000000000036,
+            "both_correct": 980,
+            "a_correct_b_wrong": 6,
+            "a_wrong_b_correct": 10,
+            "both_wrong": 4,
+            "discordant": 16,
+            "p_value": 0.454498291015625
+        }
+    ],
+    "classification_bootstrap_ci": [
+        {
+            "model": "EfficientNet-B0",
+            "metric": "accuracy",
+            "n": 1000,
+            "estimate": 0.996,
+            "ci_lower": 0.992,
+            "ci_upper": 0.999,
+            "bootstrap_n": 10000
+        },
+        {
+            "model": "EfficientNet-B0",
+            "metric": "macro_f1",
+            "n": 1000,
+            "estimate": 0.9965443062169789,
+            "ci_lower": 0.9929004347590763,
+            "ci_upper": 0.9991970262906223,
+            "bootstrap_n": 10000
+        },
+        {
+            "model": "ConvNeXt-Tiny",
+            "metric": "accuracy",
+            "n": 1000,
+            "estimate": 0.986,
+            "ci_lower": 0.978,
+            "ci_upper": 0.993,
+            "bootstrap_n": 10000
+        },
+        {
+            "model": "ConvNeXt-Tiny",
+            "metric": "macro_f1",
+            "n": 1000,
+            "estimate": 0.9872406065688022,
+            "ci_lower": 0.9799872749679283,
+            "ci_upper": 0.9935029026093112,
+            "bootstrap_n": 10000
+        },
+        {
+            "model": "TrustSeg-XAI",
+            "metric": "accuracy",
+            "n": 1000,
+            "estimate": 0.99,
+            "ci_lower": 0.984,
+            "ci_upper": 0.996,
+            "bootstrap_n": 10000
+        },
+        {
+            "model": "TrustSeg-XAI",
+            "metric": "macro_f1",
+            "n": 1000,
+            "estimate": 0.9905571582452646,
+            "ci_lower": 0.984356831175047,
+            "ci_upper": 0.9960818840290092,
+            "bootstrap_n": 10000
+        }
+    ],
+    "trustworthiness_bootstrap_ci": [
+        {
+            "endpoint": "TrustSeg expert segmentation Dice",
+            "n": 860,
+            "estimate": 0.8392228496910085,
+            "ci_lower": 0.8280311509057252,
+            "ci_upper": 0.8495356157486471,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint": "Grad-CAM++ XAI IoU",
+            "n": 150,
+            "estimate": 0.2360654548823529,
+            "ci_lower": 0.20441995446062564,
+            "ci_upper": 0.2684619712652994,
+            "bootstrap_n": 10000
+        },
+        {
+            "endpoint": "Causal faithfulness margin",
+            "n": 150,
+            "estimate": 0.27633416061401966,
+            "ci_lower": 0.2051388957605976,
+            "ci_upper": 0.3499193489551707,
+            "bootstrap_n": 10000
+        }
+    ],
+    "previous_reference": {
+        "mcnemar": {
+            "EfficientNet-B0 vs ConvNeXt-Tiny": 1.0,
+            "EfficientNet-B0 vs TrustSeg-XAI": 0.016901,
+            "ConvNeXt-Tiny vs TrustSeg-XAI": 0.026604
+        },
+        "bootstrap": {
+            "TrustSeg Accuracy": {
+                "estimate": 0.978,
+                "lower": 0.969,
+                "upper": 0.987
+            },
+            "TrustSeg Macro-F1": {
+                "estimate": 0.9795,
+                "lower": 0.9709,
+                "upper": 0.9881
+            },
+            "TrustSeg expert Dice": {
+                "estimate": 0.8383,
+                "lower": 0.8252,
+                "upper": 0.8501
+            },
+            "Grad-CAM++ XAI IoU": {
+                "estimate": 0.0417,
+                "lower": 0.0253,
+                "upper": 0.0602
+            },
+            "Causal faithfulness margin": {
+                "estimate": 0.3176,
+                "lower": 0.2524,
+                "upper": 0.3884
+            }
+        }
+    },
+    "official_test_used_for_tuning": false
+}

@@ -1,0 +1,20 @@
+{
+    "model": "EfficientNet-B0",
+    "train_mri": 4211,
+    "validation_mri": 744,
+    "official_test_mri": 1000,
+    "best_epoch": 13,
+    "best_validation_macro_f1": 0.990568960972475,
+    "best_validation_metrics": {
+        "accuracy": 0.9905913978494624,
+        "macro_precision": 0.991006328187713,
+        "macro_recall": 0.9902068767359449,
+        "macro_f1": 0.990568960972475,
+        "mcc": 0.9874145528881918,
+        "auc": 0.9966488561858274,
+        "loss": 0.11191704228360166
+    },
+    "epochs_completed": 15,
+    "training_minutes": 14.291494540373485,
+    "official_test_used_for_selection": false
+}

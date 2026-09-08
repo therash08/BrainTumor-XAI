@@ -1,0 +1,65 @@
+{
+    "overall": {
+        "n": 140,
+        "classification_accuracy": 1.0,
+        "mean_no_tumor_probability": 0.9999958464077541,
+        "mean_tumor_probability": 4.149999243249372e-06,
+        "mean_false_tumor_area_ratio": 0.0,
+        "median_false_tumor_area_ratio": 0.0,
+        "max_false_tumor_area_ratio": 0.0,
+        "empty_prediction_rate": 1.0,
+        "false_tumor_detection_rate": 0.0,
+        "mean_max_segmentation_probability": 0.025482182277898703
+    },
+    "plane_metrics": [
+        {
+            "plane": "axial",
+            "n": 52,
+            "classification_accuracy": 1.0,
+            "mean_no_tumor_probability": 0.9999947570837461,
+            "mean_tumor_probability": 5.23673018576049e-06,
+            "mean_false_tumor_area_ratio": 0.0,
+            "median_false_tumor_area_ratio": 0.0,
+            "max_false_tumor_area_ratio": 0.0,
+            "empty_prediction_rate": 1.0,
+            "false_tumor_detection_rate": 0.0,
+            "mean_max_segmentation_probability": 0.03064454375551297
+        },
+        {
+            "plane": "coronal",
+            "n": 48,
+            "classification_accuracy": 1.0,
+            "mean_no_tumor_probability": 0.9999964212377866,
+            "mean_tumor_probability": 3.5777904419849924e-06,
+            "mean_false_tumor_area_ratio": 0.0,
+            "median_false_tumor_area_ratio": 0.0,
+            "max_false_tumor_area_ratio": 0.0,
+            "empty_prediction_rate": 1.0,
+            "false_tumor_detection_rate": 0.0,
+            "mean_max_segmentation_probability": 0.017486845104334254
+        },
+        {
+            "plane": "sagittal",
+            "n": 40,
+            "classification_accuracy": 1.0,
+            "mean_no_tumor_probability": 0.9999965727329254,
+            "mean_tumor_probability": 3.4238995795021764e-06,
+            "mean_false_tumor_area_ratio": 0.0,
+            "median_false_tumor_area_ratio": 0.0,
+            "max_false_tumor_area_ratio": 0.0,
+            "empty_prediction_rate": 1.0,
+            "false_tumor_detection_rate": 0.0,
+            "mean_max_segmentation_probability": 0.028365516965277494
+        }
+    ],
+    "previous_reference": {
+        "classification_accuracy": 0.992857,
+        "mean_false_tumor_area_ratio": 0.000181,
+        "median_false_tumor_area_ratio": 0.0,
+        "empty_prediction_rate": 0.985714,
+        "false_tumor_detection_rate": 0.014286,
+        "mean_tumor_probability": 0.000915
+    },
+    "phase9_prediction_mismatches": 0,
+    "official_test_used_for_tuning": false
+}

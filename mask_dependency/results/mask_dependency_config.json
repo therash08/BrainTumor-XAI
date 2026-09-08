@@ -1,0 +1,21 @@
+{
+    "model": "TrustSeg-XAI",
+    "checkpoint_epoch": 13,
+    "official_test_n": 1000,
+    "expert_tumor_masks": 860,
+    "no_tumor_zero_masks": 140,
+    "mapping_strategy": "filename+class+plane primary; SHA256+class+plane fallback",
+    "mapping_counts": {
+        "filename_class_plane": 860,
+        "zero_no_tumor": 140
+    },
+    "conditions": {
+        "predicted": "soft predicted segmentation guidance",
+        "target": "expert tumor mask or no-tumor zero mask",
+        "no_mask": "all-zero guidance",
+        "corrupted": "180-degree rotated target guidance"
+    },
+    "official_test_used_for_tuning": false,
+    "roc_auc_method": "mean of four binary one-vs-rest ROC-AUC values",
+    "roc_auc_score_source": "original saved class probabilities/scores; no row renormalization"
+}

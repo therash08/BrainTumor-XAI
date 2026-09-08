@@ -1,0 +1,21 @@
+{
+    "model": "ConvNeXt-Tiny",
+    "train_mri": 4211,
+    "validation_mri": 744,
+    "official_test_mri": 1000,
+    "best_epoch": 6,
+    "best_validation_macro_f1": 0.9887564173118532,
+    "best_validation_metrics": {
+        "accuracy": 0.9879032258064516,
+        "macro_precision": 0.9897693452380952,
+        "macro_recall": 0.9880253216857514,
+        "macro_f1": 0.9887564173118532,
+        "mcc": 0.9839030604549154,
+        "auc": 0.9975128241272798,
+        "loss": 0.100225216919376
+    },
+    "epochs_completed": 9,
+    "training_minutes": 12.790727988878887,
+    "checkpoint": "D:\\brain_tumor\\phase7_convnext_tiny\\checkpoints\\convnext_tiny_best.pth",
+    "official_test_used_for_selection": false
+}

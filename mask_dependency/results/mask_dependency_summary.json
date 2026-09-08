@@ -1,0 +1,103 @@
+{
+    "test_n": 1000,
+    "phase9_prediction_mismatch": 0,
+    "condition_metrics": [
+        {
+            "condition": "predicted",
+            "n": 1000,
+            "accuracy": 0.99,
+            "macro_precision": 0.989701366547576,
+            "macro_recall": 0.9914465287427308,
+            "macro_f1": 0.9905571582452646,
+            "mcc": 0.9863555615692742,
+            "auc": 0.9992193679882435,
+            "mean_true_class_probability": 0.989739908516407,
+            "median_true_class_probability": 1.0
+        },
+        {
+            "condition": "target",
+            "n": 1000,
+            "accuracy": 0.99,
+            "macro_precision": 0.989701366547576,
+            "macro_recall": 0.9914465287427308,
+            "macro_f1": 0.9905571582452646,
+            "mcc": 0.9863555615692742,
+            "auc": 0.9992034043897867,
+            "mean_true_class_probability": 0.9897687858343125,
+            "median_true_class_probability": 1.0
+        },
+        {
+            "condition": "no_mask",
+            "n": 1000,
+            "accuracy": 0.99,
+            "macro_precision": 0.989701366547576,
+            "macro_recall": 0.9914465287427308,
+            "macro_f1": 0.9905571582452646,
+            "mcc": 0.9863555615692742,
+            "auc": 0.9992087712987916,
+            "mean_true_class_probability": 0.9893786417841911,
+            "median_true_class_probability": 1.0
+        },
+        {
+            "condition": "corrupted",
+            "n": 1000,
+            "accuracy": 0.99,
+            "macro_precision": 0.989701366547576,
+            "macro_recall": 0.9914465287427308,
+            "macro_f1": 0.9905571582452646,
+            "mcc": 0.9863555615692742,
+            "auc": 0.9990622584897496,
+            "mean_true_class_probability": 0.9893708879351616,
+            "median_true_class_probability": 1.0
+        }
+    ],
+    "paired_statistics": [
+        {
+            "comparison": "predicted_vs_target",
+            "n": 1000,
+            "prediction_changes": 0,
+            "correctness_changes": 0,
+            "gains": 0,
+            "losses": 0,
+            "mean_true_probability_delta": 2.8877317905426025e-05,
+            "median_true_probability_delta": 0.0,
+            "mean_absolute_probability_delta": 3.7736713886260984e-05,
+            "mcnemar_exact_p": 1.0,
+            "wilcoxon_statistic": 50.5,
+            "wilcoxon_p": 0.040395330636889534
+        },
+        {
+            "comparison": "predicted_vs_no_mask",
+            "n": 1000,
+            "prediction_changes": 0,
+            "correctness_changes": 0,
+            "gains": 0,
+            "losses": 0,
+            "mean_true_probability_delta": -0.00036126673221588136,
+            "median_true_probability_delta": 0.0,
+            "mean_absolute_probability_delta": 0.00044383609294891356,
+            "mcnemar_exact_p": 1.0,
+            "wilcoxon_statistic": 68.0,
+            "wilcoxon_p": 0.0033855333245144947
+        },
+        {
+            "comparison": "predicted_vs_corrupted",
+            "n": 1000,
+            "prediction_changes": 0,
+            "correctness_changes": 0,
+            "gains": 0,
+            "losses": 0,
+            "mean_true_probability_delta": -0.00036902058124542236,
+            "median_true_probability_delta": 0.0,
+            "mean_absolute_probability_delta": 0.0004494051933288574,
+            "mcnemar_exact_p": 1.0,
+            "wilcoxon_statistic": 80.0,
+            "wilcoxon_p": 0.008417746610317592
+        }
+    ],
+    "official_test_used_for_tuning": false,
+    "roc_auc_method": "Macro one-vs-rest ROC-AUC calculated as the arithmetic mean of four binary class-vs-rest ROC-AUC values using the original class scores.",
+    "roc_auc_precision_note": "No row normalization applied because sample-wise renormalization can alter cross-sample score rankings.",
+    "model_inference_repeated_for_auc_fix": false,
+    "predictions_changed_by_auc_fix": false
+}

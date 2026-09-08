@@ -1,0 +1,55 @@
+{
+    "metrics": [
+        {
+            "model": "EfficientNet-B0",
+            "n": 1000,
+            "accuracy": 0.996,
+            "mean_confidence": 0.9976786,
+            "confidence_minus_accuracy": 0.0016785999999999746,
+            "ece_15_bins": 0.003536000000000014,
+            "multiclass_brier": 0.00764934192565566,
+            "occupied_bins": 5,
+            "overconfident_bins": 3,
+            "underconfident_bins": 2
+        },
+        {
+            "model": "ConvNeXt-Tiny",
+            "n": 1000,
+            "accuracy": 0.986,
+            "mean_confidence": 0.9960552190600002,
+            "confidence_minus_accuracy": 0.010055219060000176,
+            "ece_15_bins": 0.01138230226000014,
+            "multiclass_brier": 0.02485314533422657,
+            "occupied_bins": 7,
+            "overconfident_bins": 5,
+            "underconfident_bins": 2
+        },
+        {
+            "model": "TrustSeg-XAI",
+            "n": 1000,
+            "accuracy": 0.99,
+            "mean_confidence": 0.9993751,
+            "confidence_minus_accuracy": 0.00937509999999997,
+            "ece_15_bins": 0.009990100000000002,
+            "multiclass_brier": 0.019438139249703595,
+            "occupied_bins": 4,
+            "overconfident_bins": 2,
+            "underconfident_bins": 2
+        }
+    ],
+    "previous_reference": {
+        "EfficientNet-B0": {
+            "ece_15_bins": 0.006844,
+            "multiclass_brier": 0.01376
+        },
+        "ConvNeXt-Tiny": {
+            "ece_15_bins": 0.009868,
+            "multiclass_brier": 0.020036
+        },
+        "TrustSeg-XAI": {
+            "ece_15_bins": 0.018729,
+            "multiclass_brier": 0.040356
+        }
+    },
+    "official_test_used_for_tuning": false
+}

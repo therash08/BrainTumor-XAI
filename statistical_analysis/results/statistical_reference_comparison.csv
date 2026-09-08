@@ -1,0 +1,4 @@
+analysis,endpoint,current,previous
+McNemar,EfficientNet-B0 vs ConvNeXt-Tiny,0.012939453125,1.0
+McNemar,EfficientNet-B0 vs TrustSeg-XAI,0.14599609375,0.016901
+McNemar,ConvNeXt-Tiny vs TrustSeg-XAI,0.454498291015625,0.026604

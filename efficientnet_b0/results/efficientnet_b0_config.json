@@ -1,0 +1,21 @@
+{
+    "architecture": "EfficientNet-B0",
+    "pretrained": "ImageNet",
+    "classes": 4,
+    "image_size": 256,
+    "train_mri": 4211,
+    "validation_mri": 744,
+    "official_test_mri": 1000,
+    "batch_size": 32,
+    "loss": "CrossEntropyLoss",
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "max_epochs": 15,
+    "early_stopping_patience": 3,
+    "gradient_clip": 1.0,
+    "selection_metric": "validation Macro-F1",
+    "amp": true,
+    "seed": 42,
+    "official_test_used_for_selection": false
+}

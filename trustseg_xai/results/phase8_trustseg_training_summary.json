@@ -1,0 +1,27 @@
+{
+    "model": "TrustSeg-XAI",
+    "train_mri": 4211,
+    "validation_mri": 744,
+    "official_test_mri": 1000,
+    "parameter_count": 34346117,
+    "best_epoch": 13,
+    "best_selection_score": 0.9143462902562398,
+    "best_validation_metrics": {
+        "loss": 0.15054218747442769,
+        "seg_loss": 0.1966234223256188,
+        "cls_loss": 0.10446095338431738,
+        "accuracy": 0.9905913978494624,
+        "macro_precision": 0.9911244596597337,
+        "macro_recall": 0.9905101682469751,
+        "macro_f1": 0.9907727935579423,
+        "mcc": 0.9874246835325795,
+        "auc": 0.996182873851499,
+        "expert_tumor_dice": 0.8379197869545374,
+        "expert_tumor_n": 585,
+        "selection_score": 0.9143462902562398
+    },
+    "epochs_completed": 15,
+    "training_minutes": 81.56953911383947,
+    "checkpoint": "D:\\brain_tumor\\phase8_trustseg_xai\\checkpoints\\trustseg_xai_best.pth",
+    "official_test_used_for_selection": false
+}

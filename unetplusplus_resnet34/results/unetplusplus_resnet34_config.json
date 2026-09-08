@@ -1,0 +1,21 @@
+{
+    "architecture": "U-Net++",
+    "encoder": "ResNet34",
+    "encoder_weights": "ImageNet",
+    "image_size": 256,
+    "train_expert_mri": 3312,
+    "validation_expert_mri": 585,
+    "official_test_expert_mri": 860,
+    "batch_size": 8,
+    "max_epochs": 15,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 3,
+    "gradient_clip": 1.0,
+    "loss": "0.5 BCE + 0.5 Soft Dice",
+    "threshold": 0.5,
+    "selection_metric": "validation Dice",
+    "amp": true,
+    "seed": 42,
+    "official_test_used_for_model_selection": false
+}

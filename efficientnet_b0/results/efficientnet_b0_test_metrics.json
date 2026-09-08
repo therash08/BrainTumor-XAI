@@ -1,0 +1,133 @@
+{
+    "model": "EfficientNet-B0",
+    "best_epoch": 13,
+    "best_validation_macro_f1": 0.990568960972475,
+    "official_test_n": 1000,
+    "class_distribution": {
+        "glioma": 254,
+        "meningioma": 306,
+        "pituitary": 300,
+        "no_tumor": 140
+    },
+    "test_metrics": {
+        "accuracy": 0.996,
+        "macro_precision": 0.9963912458609272,
+        "macro_recall": 0.9967320261437909,
+        "macro_f1": 0.9965443062169789,
+        "mcc": 0.9945545411826767,
+        "auc": 0.9996296325674504,
+        "loss": 0.03507099771499634,
+        "n": 1000
+    },
+    "per_class_metrics": [
+        {
+            "class_idx": 0,
+            "class_name": "glioma",
+            "precision": 0.9921875,
+            "recall": 1.0,
+            "f1": 0.996078431372549,
+            "support": 254,
+            "auc": 0.99991819889806
+        },
+        {
+            "class_idx": 1,
+            "class_name": "meningioma",
+            "precision": 1.0,
+            "recall": 0.9869281045751634,
+            "f1": 0.993421052631579,
+            "support": 306,
+            "auc": 0.999336045657456
+        },
+        {
+            "class_idx": 2,
+            "class_name": "pituitary",
+            "precision": 0.9933774834437086,
+            "recall": 1.0,
+            "f1": 0.9966777408637874,
+            "support": 300,
+            "auc": 0.9992642857142857
+        },
+        {
+            "class_idx": 3,
+            "class_name": "no_tumor",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 140,
+            "auc": 1.0
+        }
+    ],
+    "confusion_matrix": {
+        "class_order": [
+            "glioma",
+            "meningioma",
+            "pituitary",
+            "no_tumor"
+        ],
+        "matrix": [
+            [
+                254,
+                0,
+                0,
+                0
+            ],
+            [
+                2,
+                302,
+                2,
+                0
+            ],
+            [
+                0,
+                0,
+                300,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                140
+            ]
+        ]
+    },
+    "plane_metrics": [
+        {
+            "plane": "axial",
+            "n": 398,
+            "accuracy": 0.9949748743718593,
+            "macro_precision": 0.995093023255814,
+            "macro_recall": 0.9963503649635037,
+            "macro_f1": 0.9956957603375317,
+            "mcc": 0.9930678429033696,
+            "auc": 0.9989759665645144
+        },
+        {
+            "plane": "coronal",
+            "n": 305,
+            "accuracy": 0.9967213114754099,
+            "macro_precision": 0.9972527472527473,
+            "macro_recall": 0.997093023255814,
+            "macro_f1": 0.9971567962262932,
+            "mcc": 0.9955723238213935,
+            "auc": 1.0
+        },
+        {
+            "plane": "sagittal",
+            "n": 297,
+            "accuracy": 0.9966329966329966,
+            "macro_precision": 0.997191011235955,
+            "macro_recall": 0.9969879518072289,
+            "macro_f1": 0.9970724191063174,
+            "mcc": 0.995416116044727,
+            "auc": 0.9999864071335364
+        }
+    ],
+    "previous_reference": {
+        "accuracy": 0.99,
+        "macro_f1": 0.9904,
+        "mcc": 0.9864,
+        "auc": 0.9996
+    },
+    "official_test_used_for_tuning": false
+}
